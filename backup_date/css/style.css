@@ -1,0 +1,501 @@
+/* font library */
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-width: 230px;
+    font-family: Arial, sans-serif;
+    margin: 150px 0px 0px 0px;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* .resizeimage img { width: 100%; } */
+
+.site-header {
+    z-index: 1; /* ヘッダーを一番手前のレイヤーに配置 */
+    background-color: rgb(62, 74, 134, 0.980);
+    color: #fff;
+    text-align: center;
+    padding:15px 0;
+    position: fixed; /* ヘッダーを固定配置 */
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 30%;
+}
+
+.site-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+/*! サイトナビ */
+.site-nav {
+    /* background-color: transparent; 背景色を透明に設定 */
+    background-color: rgba(255, 255, 255, 0.911);
+    text-align: center;
+    position: fixed; /* ナビゲーションを固定配置 */
+    opacity: 1s;
+    top: 65px; /* ヘッダーの高さに合わせて調整 */
+    left: 0;
+    right: 0;
+    z-index: 1; /* ナビゲーションがヘッダーの下に表示されるように設定 */
+}
+
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap; /* ウィンドウの幅が狭い場合に複数行に折り返す */
+}
+
+.site-nav li {
+    display: inline;
+    margin-right: 45px;
+    flex: 5; /* 幅を均等に分配 */
+}
+
+
+
+.sidtsite-navopic1 a {
+    font-weight:bold;
+    text-decoration:none;
+}
+
+/* ナビの色指定 */
+.site-nav a {
+    text-decoration: none;
+    color: #c03d53;
+}
+
+.site-nav a:link {
+    text-decoration: none;
+    color:#1e6096;
+}
+
+.site-nav a:visited {
+    text-decoration: none;
+    color:#be6161;
+}
+
+.site-nav a:hover {
+text-decoration: none;
+color:#4022c5;
+
+padding: 0 0 15px 0;
+border-bottom: 2px solid #333;
+}
+
+.site-nav a:active {
+    text-decoration: none;
+color:#33CC00;
+}
+/* ナビの色指定END*/
+/*! サイトナビEND */
+
+
+/*! サイトのh2タイトル表示情報の変更 */
+.section h1{
+    font-family: Regular ;
+}
+
+.section h1 {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #000000;
+    text-decoration: none;
+
+  }
+
+.section h1:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #343e6e;
+    transform: translate(-100%, 0);
+    transition: transform cubic-bezier(0.111, 0.61, 0.355, 1) 0.35s;
+    content: "";
+  }
+.section h1:hover:after {
+    transform: translate(0, 0);
+  }
+
+/*! サイトのh2タイトル表示情報の変更END*/
+
+.container {
+    display: flex; /* 2カラムの配置を実現 */
+    max-width: 100%;
+    min-width: 30%;
+    margin:0 5%;
+    width:60%; /* メインコンテンツの幅を設定 */
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.container div{
+    margin:0 1% ;
+}
+
+.container h2{
+    display: center;
+}
+
+/* .site-header a{
+    color: #fff; ヘッダー部分の文字色を白に設定
+    text-align: center;
+    padding: 20px 0;
+} */
+
+
+/* .sidebar {
+    text-align: center;
+    padding: 10px;
+    margin: 0 3% 50px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+} */
+
+.sidebar {
+    text-align: center;
+    width: 30%;
+
+    min-width: 170px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    /* white-space: nowrap; */
+
+}
+
+.sidebar div{
+    background-color: #f1f1f1;
+    border-radius: 10px; /* すべての角を 10px 丸くする */
+    margin-bottom: 20px;
+}
+
+.sidebar1 img{
+    width: 100%;
+    float: left; /* 画像を左に浮かせる */
+    margin-right: 10px; /* 画像とテキストの間隔を調整 */
+}
+
+/*! サイドトピック欄 */
+
+.sidtopic h2{
+    width: 100%;
+}
+
+.sidtopic div{
+    margin-bottom: 20px;
+    padding-bottom: 5;
+    min-width: 200px;
+}
+
+.sidtopic1 p,
+.sidtopic2 p,
+.sidtopic3 p,
+.sidtopic4 p,
+.sidtopic5 p,
+.sidtopic6 p,
+.sidtopic7 p,
+.sidtopic8 p,
+.sidtopic9 p,
+.sidtopic10 p {
+    margin: 0; /* マージンをリセットしてテキストを上下中央に配置 */
+    word-wrap: break-word; /* テキストが指定範囲内で折り返されるように設定 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 表示行数の指定 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* テキストがはみ出た場合に省略記号 (...) を表示 */
+}
+
+.sidtopic1,
+.sidtopic2,
+.sidtopic3,
+.sidtopic4,
+.sidtopic5,
+.sidtopic6,
+.sidtopic7,
+.sidtopic8,
+.sidtopic9,
+.sidtopic10 {
+    min-height: 100px;
+    border-radius: 10px; /* すべての角を 10px 丸くする */
+    clear: both;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.sidtopic1 a,
+.sidtopic2 a,
+.sidtopic3 a,
+.sidtopic4 a,
+.sidtopic5 a,
+.sidtopic6 a,
+.sidtopic7 a,
+.sidtopic8 a,
+.sidtopic9 a,
+.sidtopic10 a {
+    /* font-weight:bold; */
+    text-decoration:none;
+}
+
+.sidtopic1 a:link,
+.sidtopic2 a:link,
+.sidtopic3 a:link,
+.sidtopic4 a:link,
+.sidtopic5 a:link,
+.sidtopic6 a:link,
+.sidtopic7 a:link,
+.sidtopic8 a:link,
+.sidtopic9 a:link,
+.sidtopic10 a:link {
+    color:#0000FF;
+}
+
+.sidtopic1 a:visited,
+.sidtopic2 a:visited,
+.sidtopic3 a:visited,
+.sidtopic4 a:visited,
+.sidtopic5 a:visited,
+.sidtopic6 a:visited,
+.sidtopic7 a:visited,
+.sidtopic8 a:visited,
+.sidtopic9 a:visited,
+.sidtopic10 a:visited {
+    color:#6600FF;
+}
+
+.sidtopic1 a:hover,
+.sidtopic2 a:hover,
+.sidtopic3 a:hover,
+.sidtopic4 a:hover,
+.sidtopic5 a:hover,
+.sidtopic6 a:hover,
+.sidtopic7 a:hover,
+.sidtopic8 a:hover,
+.sidtopic9 a:hover,
+.sidtopic10 a:hover {
+    color:#FF0099;
+    text-decoration:underline;
+}
+
+.sidtopic1 a:active,
+.sidtopic2 a:active,
+.sidtopic3 a:active,
+.sidtopic4 a:active,
+.sidtopic5 a:active,
+.sidtopic6 a:active,
+.sidtopic7 a:active,
+.sidtopic8 a:active,
+.sidtopic9 a:active,
+.sidtopic10 a:active {
+    color:#33CC00;
+}
+/*! サイドトピック欄 END*/
+
+/* 蛍光黄色 */
+
+
+span {
+    position: relative;
+    background: linear-gradient(transparent 50%, yellow 40%);
+  }
+
+  .arrow-icon {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-width: 8px 8px 0 0;
+    border-color: black;
+    transform: rotate(45deg);
+  }
+/* .sidtopic p {
+    margin: 0; マージンをリセットしてテキストを上下中央に配置
+    word-wrap: break-word; テキストが指定範囲内で折り返されるように設定
+}
+ */
+
+
+
+.section {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* メインセクションの背景色 */
+#section1, #section2, #section3, #section4, #section5{
+    background-color: #fff;
+}
+
+
+/* セクションのタイトル */
+.section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* セクションのテキスト */
+.section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* .copyright {
+    background-color: #081552da;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+
+/*! プロフィール  */
+.profile {
+    width: 70%; /* メインコンテンツの幅を設定 */
+    max-width: 70%;
+    min-height: 30%;
+    margin-left: 15%;
+    margin-right: 25%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+/*! プロフィールEND */
+
+/*! フッター情報 */
+.under ul{
+    font-size: 90%;
+    background-color: #293469;
+    list-style-type: none; /* リストマーカーを非表示にする */
+    text-align: left; /* リスト内のテキストを左寄せにする */
+    padding: 0; /* リストの余白を削除 */
+    margin: 0; /* リストの余白を削除 */
+    margin-top: 50%;
+}
+
+.under li{
+    padding: 1%;
+    padding-top: 1%;
+    padding-left: 2%;
+
+}
+
+.text:first-child {
+    color: red;
+}
+
+.under a{
+    text-decoration: none;
+    color: #fff;
+}
+/*! フッター情報END*/
+
+/*! コピーライト */
+.footer-copyright {
+    font-size: 80%;
+    background-color: #081552da; /* フッターの背景色を設定 */
+    color: #fff; /* フッターの文字色を白に設定 */
+    text-align: center; /* テキストを中央揃えにする */
+    text-align:bottom ;
+    padding: 0 0 10px 0; /* 上下の余白を設定 */
+    position: relative; /* 他の要素との重なりを防ぐために relative に設定 */
+    clear: both; /* floating要素のクリア */
+}
+/*! コピーライト END*/
+
+
+@media screen and (max-width: 1000PX) {
+    .sidebar {
+        width: 40%; /* 1カラム表示にするためにサイドバーの幅を100%に設定 */
+        min-width: 100px;
+    }
+
+.container {
+    display: flex; /* 2カラムの配置を実現 */
+    max-width: 100%;
+    min-width: 30%;
+    margin:0 5%;
+    width:80%; /* メインコンテンツの幅を設定 */
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.main-dacontent{
+    width: 100%;
+}
+}
+
+
+
+@media screen and (max-width: 800PX) {
+    .container {
+        flex-direction: column; /* ウィンドウ幅が600px以下の場合、フレックスボックスの方向を縦（1カラム）に変更 */
+    }
+
+    .sidebar {
+        width: 100%; /* 1カラム表示にするためにサイドバーの幅を100%に設定 */
+    }
+
+    .site-nav a:hover {
+        color:#4022c5;
+        padding: 0 0 0px 0;
+        border-bottom: 2px solid #333;
+        }
+
+        .site-nav ul {
+            justify-content: space-between; /* アイテムを均等に配置 */
+        }
+
+        .site-nav li {
+            padding-right: 2rem ;
+            flex: 1; /* アイテムを均等に幅を分ける */
+            margin-right: 0; /* マージンを0に設定 */
+        }
+}
+
+@media screen and (max-width: 430px) {
+    .container {
+        flex-direction: column; /* 1カラムに切り替えるためにカラムの方向を縦に設定 */
+    }
+
+    .sidebar {
+        width: 100%; /* サイドバーを幅100%に設定 */
+    }
+
+    .site-nav a:hover {
+        color: #4022c5;
+        padding: 0 0 0px 0;
+        border-bottom: 2px solid #333;
+    }
+
+    .site-nav ul {
+        justify-content: space-between; /* アイテムを均等に配置 */
+    }
+
+    .site-nav li {
+        padding-right: 2rem;
+        flex: 1; /* アイテムの幅を均等に分ける */
+    }
+}
+/*!  */
+/*!  END*/

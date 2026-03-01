@@ -1,0 +1,67 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.site-header {
+    background-color: #081552da; /* 濃いネイビー色を設定 */
+    color: #fff; /* テキストの色を白に設定 */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.site-nav {
+    /* background-color: #ffffff; ヘッダーの下部の背景色を設定 */
+    text-align: center;
+}
+
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #cf0a0a;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#section1 {
+    background-color: #f5f5f5;
+}
+
+#section2 {
+    background-color: #f5f5f5;
+}
+
+#section3 {
+    background-color: #f5f5f5;
+}

@@ -1,0 +1,164 @@
+a {
+    text-decoration: none;
+    color: #cf0a0a;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 150px 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+
+.site-header {
+    background-color: rgb(62, 74, 134, 0.980);
+    color: #fff;
+    text-align: center;
+    padding:15px 0;
+    position: fixed; /* ヘッダーを固定配置 */
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.site-nav {
+    /* background-color: transparent; 背景色を透明に設定 */
+    background-color: rgba(255, 255, 255, 0.911);
+    text-align: center;
+    position: fixed; /* ナビゲーションを固定配置 */
+    opacity: 1;
+    top: 65px; /* ヘッダーの高さに合わせて調整 */
+    left: 0;
+    right: 0;
+    z-index: 1; /* ナビゲーションがヘッダーの下に表示されるように設定 */
+}
+
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #cf0a0a;
+}
+
+/* .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.sidebar {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+} */
+
+/* .main-content {
+    flex: 3;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+} */
+
+.site-header a{
+    color: #fff; /* ヘッダー部分の文字色を白に設定 */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex; /* 2カラムの配置を実現 */
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 20px 15% 20px;
+}
+
+.sidebar {
+    text-align: center;
+    padding: 10px;
+    margin: 0 3% 50px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.main-content {
+    width: 70%; /* メインコンテンツの幅を設定 */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.profile {
+    width: 70%; /* メインコンテンツの幅を設定 */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.section {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#section1 {
+    background-color: #fff;
+}
+
+#section2 {
+    background-color: #fff;
+}
+
+#section3 {
+    background-color: #fff;
+}
+#section4 {
+    background-color: #fff;
+}
+#section5 {
+    background-color: #fff;
+}
+
+/* セクションのタイトル */
+.section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* セクションのテキスト */
+.section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.site-footer {
+    background-color: #081552da; /* フッターの背景色を設定 */
+    color: #fff; /* フッターの文字色を白に設定 */
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; /* フッターを固定配置 */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
